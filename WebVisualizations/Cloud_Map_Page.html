@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization:Cloudiness</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-sm bg-success navbar-dark" >
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Cloudiness</a>
+              
+                <!-- Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Map_Comparisons.html">Comparisons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Data.html" target="_blank">Data</a>
+                  </li>
+              
+                  <!-- Dropdown 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu"> -->
+                            <div class="dropdown">
+                                    <button class="dropbtn">Maps</button>
+                                    <div class="dropdown-content"> 
+                      <a class="dropdown-item" href="Humidity_Map_Page.html">Humidity</a>
+                      <a class="dropdown-item" href="Temperature_Map_Page.html">Temperature</a>
+                      <a class="dropdown-item" href="Wind_Speed_Map_Page.html">Wind Speed</a>
+                    </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="container">
+                  <session class="description-content mainDash">
+                    <h1 class="description-header">Summary: Latitude vs Cloudiness</h1>
+                    <hr class="description-hr">
+                    <img src="Image_Resources/Cloudiness_v_Lat.png" alt="" id="description-image">
+                    <p>This graph is pretty even throughout when it comes to percentage of cloudiness based on latitude. We can see that the higher the latitude is though, the less sunlight is received and the cloudier it is.</p>
+                    <p>Cloudiness percentages seem to be closer to either 0% or 100% as the latitude increases, and percentages between those 2 extemes do not have many cities within.</p>
+                  </session>
+                
+                  <session id="imageNav-area" class="sideDash">
+                    <div class="imageNav-content">
+                      <h2 class="imageNav-header">visualizations</h2>
+                      <hr>
+                      <div id="images">
+                        <a href="Temperature_Map_Page.html"><img class="imageNav-photo" src="Image_Resources/Temp_v_Lat.png" alt=""></a>
+                        <a href="Wind_Speed_Map_Page.html"><img class="imageNav-photo" src="Image_Resources/Wind_v_Lat.png" alt=""></a>
+                        <a href="Humidity_Map_Page.html"><img class="imageNav-photo" src="Image_Resources/Humidity_v_Lat.png" alt=""></a>
+                        <a href="Cloud_Map_Page.html"><img class="imageNav-photo" src="Image_Resources/Cloudiness_v_Lat.png" alt=""></a>
+                      </div>
+                    </div>
+                  </session>
+                </div>
+                
+                <footer class="footer navbar-fixed-bottom">
+                  <div class="two-toned-footer-color"></div>
+                  <p class="text-muted text-muted-footer text-center">&copy; Copyright Thomas' Bootcamp 2019</p>
+                </footer>
+
+
+
+</body>
+</html>
